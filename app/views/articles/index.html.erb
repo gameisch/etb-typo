@@ -1,0 +1,8 @@
+<% for article in @articles -%>
+  <div class="post">
+    <%= render article %>
+    <p class="meta"><%= article_links article %></p>
+  </div>
+<% end -%>
+
+<%= paginate @articles, :next_label => "#{_("Next page")} &raquo;", :previous_label => "&laquo; #{_('Previous page')}" %>

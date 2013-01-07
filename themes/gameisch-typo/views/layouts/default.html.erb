@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+ <html dir="ltr" lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js lt-ie9 lt-ie8 lt-ie7">
+  <![endif]--> <!--[if (IE 7)&!(IEMobile)]>
+   <html dir="ltr" lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js lt-ie9 lt-ie8">
+    <![endif]--> <!--[if (IE 8)&!(IEMobile)]>
+    <html dir="ltr" lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js lt-ie9">
+   <![endif]--> <!--[if gt IE 8]><!-->
+  <html dir="ltr" lang="ru-RU" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js">
+<!--<![endif]-->
+<head>
+  <link rel="canonical" href="http://www.evtobu.ru" />
+  <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="HandheldFriendly" content="True">
+       <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         <meta name="format-detection" content="telephone=no">
+  <meta name="author" content="EvilToonBuro ака gameisch он же Ульянов Антон" /> 
+        <meta name="copyright" content="&copy; 2012 ETB > gameisch">
+  <%= page_header %>
+  <title><%=h page_title %></title>
+  <%= stylesheet_link_tag '/stylesheets/theme/application.css', :media => 'all' %>
+  	<style type="text/css">
+            @-webkit-keyframes loading { 0% { background-position: 0 0; } 100% { background-position: 16px 0; } }
+            @-moz-keyframes loading { 0% { background-position: 0 0; } 100% { background-position: 16px 0; } }
+        </style>
+</head>
+
+<body>
+    <!-- start header -->
+    <div id="header">
+        
+        <div class='topbar'>
+    <div class='topbar-inner'>
+      <div class='container-fluid'>
+        <div id="logo">
+            <h1><%= link_to this_blog.blog_name, this_blog.base_url %></h1>
+            <nav id="sectionMenu">
+            	<%= link_to _("Архив статей"), {:controller => "articles", :action => "archives"} if (controller.controller_name != "index" ) %>
+            	<%= link_to 'О нас', '/hello', :title => 'вступление' %>
+            	<%= link_to 'Контакты', '/nodes', :title => 'Где и как можно с нами связаться' %>
+            </nav>
+            <div class="colour"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+    </div>
+    <!-- end header -->
+
+  <div id="page">
+    <div id="content">
+      <%= yield %>
+      <%= javascript_tag 'show_dates_as_local_time()' %>
+    </div>
+
+    <div id="sidebar">
+      <!-- sidebar components -->
+      <%= render_sidebars %>
+    </div>
+    <br style="clear:both;" />
+  </div>
+
+  <div id="footer">
+        <div class="wrap">
+        <p id="legal">
+        
+               <%= link_to 'Evil Toon Buro', 'http://evtobu.ru/' %> // 
+               <%= link_to 'написать мне', 'mailto:info@evtobu.ru', :class => 'email', :target => '_blank', :title => 'написать мне письмо' %> &copy;Ульянов Антон В. </p>
+               <p id="legal">
+               <%= link_to 'Сообщество Тайпо', 'mailto:info@evtobu.ru', :target => '_blank', :title => 'сообщество тайпо' %> // <%= link_to 'Тайпо от ETB', 'mailto:info@evtobu.ru', :target => '_blank', :title => 'мое тайпо на русском' %>
+                
+            </p>
+        </div>
+  </div>
+</body>
+</html>
+
