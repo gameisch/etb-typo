@@ -38,8 +38,8 @@
             <h1><%= link_to this_blog.blog_name, this_blog.base_url %></h1>
             <nav id="sectionMenu">
             	<%= link_to _("Архив статей"), {:controller => "articles", :action => "archives"} if (controller.controller_name != "index" ) %>
-            	<%= link_to 'О нас', '/hello', :title => 'вступление' %>
-            	<%= link_to 'Контакты', '/nodes', :title => 'Где и как можно с нами связаться' %>
+            	<%= link_to 'О нас', 'http://evtobu.ru/', :title => 'вступление' %>
+            	<%= link_to 'Контакты', 'http://evtobu.ru/nodes', :title => 'Где и как можно с нами связаться' %>
             </nav>
             <div class="colour"></div>
         </div>
@@ -70,7 +70,8 @@
                <%= link_to 'Evil Toon Buro', 'http://evtobu.ru/' %> // 
                <%= link_to 'написать мне', 'mailto:info@evtobu.ru', :class => 'email', :target => '_blank', :title => 'написать мне письмо' %> &copy;Ульянов Антон В. </p>
                <p id="legal">
-               <%= link_to 'Сообщество Тайпо', 'mailto:info@evtobu.ru', :target => '_blank', :title => 'сообщество тайпо' %> // <%= link_to 'Тайпо от ETB', 'mailto:info@evtobu.ru', :target => '_blank', :title => 'мое тайпо на русском' %>
+               <%= link_to 'Сообщество Тайпо', 'https://github.com/fdv/typo/wiki', :target => '_blank', :title => 'сообщество тайпо' %> // 
+               <%= link_to 'Тайпо от ETB', 'https://github.com/gameisch/etb-typo/blob/master/README.textile', :target => '_blank', :title => 'мое тайпо на русском' %>
                 
             </p>
         </div>

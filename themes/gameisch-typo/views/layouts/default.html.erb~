@@ -16,7 +16,7 @@
        <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
          <meta name="format-detection" content="telephone=no">
-  <meta name="author" content="EvilToon ака gameisch он же Ульянов Антон" /> 
+  <meta name="author" content="EvilToonBuro ака gameisch он же Ульянов Антон" /> 
         <meta name="copyright" content="&copy; 2012 ETB > gameisch">
   <%= page_header %>
   <title><%=h page_title %></title>
@@ -70,7 +70,8 @@
                <%= link_to 'Evil Toon Buro', 'http://evtobu.ru/' %> // 
                <%= link_to 'написать мне', 'mailto:info@evtobu.ru', :class => 'email', :target => '_blank', :title => 'написать мне письмо' %> &copy;Ульянов Антон В. </p>
                <p id="legal">
-               <%= link_to 'Сообщество Тайпо', 'mailto:info@evtobu.ru', :target => '_blank', :title => 'сообщество тайпо' %> // <%= link_to 'Тайпо от ETB', 'mailto:info@evtobu.ru', :target => '_blank', :title => 'мое тайпо на русском' %>
+               <%= link_to 'Сообщество Тайпо', 'https://github.com/fdv/typo/wiki', :target => '_blank', :title => 'сообщество тайпо' %> // 
+               <%= link_to 'Тайпо от ETB', 'https://github.com/gameisch/etb-typo/blob/master/README.textile', :target => '_blank', :title => 'мое тайпо на русском' %>
                 
             </p>
         </div>
