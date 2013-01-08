@@ -1,81 +1,97 @@
-h1. About Typo
+h1. Добро пожаловать в русскую версию Typo блога. 
 
-Typo has been around since March of 2005 making it one of the oldest blogging platforms in Rails. 
+Тайпо блог зародился в 2005 году и до недавних времен был устаревшей платформой созданной на Ruby on Rails. Теперь же он имеет множество функций которые необходимы движку для блога, огромные возможности SEO оптимизации, темы, расширения и плагины.
+Вы можете скачать официальный исходник в формате .tgz с "tarball":http://typosphere.org/stable.tgz 
+или zip файл с "zip file":http://typosphere.org/stable.zip.
+Тайпо был доступен на следующих языках: Danish, German, English, Spanish (Mexican), French, Hebrew, Italian, Japanese, Lituanian, Dutch, Polish, Romanian, Chinese (traditional)
+теперь он появился на Русском в архиве .tar.gz:
 
-It provides every feature a modern blogging engine needs: powerful themes, extensions, smart users management, SEO capabilities and brings a great user experience for both site visitors and Web developpers. Typo is easy to install and even easier to use. 
+!http://typo.evtobu.ru/files/download-typo.png(Download Typo)!:http://typo.evtobu.ru/files/typo_rus_2.0.1.tar.gz
 
-Typo is free software released under the MIT licence and maintained by a bunch of cool people on their spare time. 
+а так же в архиве .zip:
+* "typo_rus":http://typo.evtobu.ru/files/typo_rus_2.0.1.zip
 
-The current version is Typo 6.0.10 for Ruby on Rails 3.0.10
+h1. Юзабильные ссылки
 
-!http://blog.typosphere.org/download-typo.png(Download Typo)!:http://typosphere.org/stable.tgz
+h2. Расширь свой блог Typo
 
-h1. Useful links
+* "плагины сайдбаров":https://github.com/fdv/typo/wiki/Sidebar-plugins
+* "Плагины для страниц":https://github.com/fdv/typo/wiki/In-Page-Plugins
 
-h2. Enhance your Typo blog
+h2. Другие источники:
 
-* "Sidebar Plugins":https://github.com/fdv/typo/wiki/Sidebar-plugins
-* "In page Plugins":https://github.com/fdv/typo/wiki/In-Page-Plugins
+* "Скачать исходник:":http://typosphere.org/stable.tgz
+* "Скачать исходник с русской локализацией:":http://typo.evtobu.ru/files/typo_rus_2.0.1.zip
+* "*Сообщить об ошибке*":https://github.com/fdv/typo/issues
+* "*Часто задаваемые вопросы*":http://wiki.github.com/fdv/typo/frequently-asked-questions
+* "Официальный блог Typo":http://blog.typosphere.org
+* "Официальный блог Typo на русском:":http://blog.evtobu.ru
+* "Читать на твитере Фреда":httpL//twitter.com/typosphere
+* "Читать на твитере Антона:":httpL//twitter.com/gameisch
 
-h2. More resources:
+h2. Свяжитесь с нами
 
-* "Download Typo source code:":http://typosphere.org/stable.tgz
-* "*Report a bug*":https://github.com/fdv/typo/issues
-* "*Frequently Asked Questions*":http://wiki.github.com/fdv/typo/frequently-asked-questions
-* "Official Typo blog":http://blog.typosphere.org
-* "Follow us on Twitter":httpL//twitter.com/typosphere
-
-h2. Get in touch
-
-If you need help or want to contribute to Typo, you should start with the following:
+Если вам нужна помощь, либо хотите поспособствовать развитию TYPO:
 
 * IRC: #typo on irc.freenode.net
 * "Mailing list":http://rubyforge.org/mailman/listinfo/typo-list
+* SKYPE: gameisch (для русской версии TYPO)
+остальные контакты (для русских блогеров) вы сможете найти на сайте Evil Toon Buro:
+!http://typo.evtobu.ru/files/etb_ruby_logo.png(Evil Toon Buro)!:http://evtobu.ru/nodes
 
-h1. Install Typo
+h1. Установка TYPO
 
-Installing Typo is trivial, provided you follow the following steps.
+Установка TYPO является тривиальной и интуитивной, просто следуйте шаг за шагом.
 
-h2. 1. Prerequisites
+h2. 1. Системные требования
 
-To install Typo you need the following:
+Что бы установить Тайпо у вас должны быть настроены:
 
-* Ruby 1.9.2 or 1.9.3. Typo may work with Ruby 1.8.7 with some minor tweakings, but this version is not supported anymore.
+* Ruby 1.9.2 or 1.9.3. Typo может работать и на Ruby 1.8.7 с небольшими шалостями, но официально эта версия больше не поддерживается.
 * Ruby On Rails 3.0.10
-* A database engine, MySQL, PgSQL or SQLite3
-* A FTP client or even better SSH access to your hosting provider
+* MySQL, PgSQL или SQLite3
+* FTP клиент или лучше SSH доступ к вашему хостинг провайдеру
 
-h2. 2. Download Typo
+h2. 2. Загрузите исходник Typo
 
-Download Typo stable version at http://typosphere.org/stable.tar.gz or http://typosphere.org/stable.zip.
+Скачать стабильную версию Typo можно тут http://typosphere.org/stable.tar.gz или http://typosphere.org/stable.zip.
+Русскую не всегда стабильную тут http://typo.evtobu.ru/files/typo_rus_2.0.1.tar.gz или http://typo.evtobu.ru/files/typo_rus_2.0.1.zip
 
-h2. 3. Install Typo
+h2. 3. Установка Typo
 
-Unpack Typo archive into your Web hosting space. Rename database.yml.yourEngine to database.yml, edit the file and add your database name, login and password. If you have a doubt about this one , just ask your Web hosting provider.
+Распакуйте архив Typo на ваш хостинг (следуйте инструкциям вашего хостинга). Переименуйте database.yml.вашаБД в database.yml, отредактируйте файл добавив имя БД, Логин и пароль (они на вашем хостинге скорей всего). Если что спросите у своего провайдера хостинга или эникейщика.
 
-Then run:
+Затем запустите команду:
 
 $ bundle install
-$ ./scripts/rails server
+$ rails s
 
-You can now access Typo to http://yourdomain:3000
+Затем зайдите в Typo по адресу в браузере http://yourdomain.... или localhost:3000
 
-That's all!
+И на этом все господа!
+ЗЫ: правда иногда бывают какие-то трудности у неопытных разработчиков, но не отчаивайтесь, мы вам поможем
 
-h2. 4. Daily Typo use
+h2. 4. Руководство пользователя
 
-We recommend using Passenger (mod_rails) or Thin / Unicorn with Apache or Nginx.
+Мы рекомендуем Passenger (mod_rails) или Thin / Unicorn с Apache или Nginx.
 
-The admin interface for Typo allows you to post articles and change configuration settings. It can be found at http://yourdomain.com/admin. New content can be posted using the admin interface or a desktop blog editor such as MarsEdit or Ecto. For a list of working clients, please visit http://typosphere.org/wiki/DesktopClients
+Чтобы редактировать статьи, страницы и все остальное необходимо войти в интерфейс админа.
+Он находится по адресу http://yourdomain.com/admin. 
+Новый контент создается в интерфейсе админа, а также есть десктопный blog editor типа MarsEdit или Ecto. 
+подробней на http://typosphere.org/wiki/DesktopClients
 
-h1. Maintainers
-This is a list of Typo maintainers. If you have committed, please add your name and contact details to the list.
+h1. Сопровождающие проекта
 
-h2. The Cool Kids
+h2. Клевые ребятки
 
 *Frédéric de Villamil* <frederic@de-villamil.com>
 blog: http://t37.net
 irc: neuro`
+
+*Ульянов Антон В.*
+blog: http://www.typo.evtobu.ru/
+site: http://www.evtobu.ru/
+skype: gameisch
 
 *Matijs van Zuijlen*
 blog: http://www.matijs.net/blog/
@@ -89,11 +105,11 @@ irc: ook
 blog: http://elsif.fr
 irc: yaf
 
-And many more cool people who've one day or another contributed to Typo
+И еще много клевых людей которые помогли этому проекту
 
-*Original Author: Tobias Luetke*
+*Настоящий создатель: Tobias Luetke*
 blog: http://blog.leetsoft.com/
 irc:  xal
 
-Enjoy,
-The Typo team
+Вступай в наши ряды,
+Команда TYPO
